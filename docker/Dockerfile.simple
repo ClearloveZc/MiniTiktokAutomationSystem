@@ -1,0 +1,18 @@
+# TikTok Auto Publisher - Simple Dockerfile (uses remote Selenium)
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy requirements and install
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY . .
+
+# Create directories
+RUN mkdir -p /app/logs /app/data/videos /app/data/cookies
+
+ENV PYTHONPATH=/app/src
+
+CMD ["python", "src/main.py", "--help"]

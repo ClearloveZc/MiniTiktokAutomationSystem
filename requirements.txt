@@ -1,0 +1,17 @@
+# TikTok Auto Publisher - Dependencies
+
+# Selenium automation
+selenium>=4.15.0
+undetected-chromedriver>=3.5.0
+webdriver-manager>=4.0.0
+
+# Configuration management
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Logging
+loguru>=0.7.0
+
+# Utilities
+requests>=2.31.0
+setuptools>=69.0.0  # Required for Python 3.12+ (distutils compatibility)

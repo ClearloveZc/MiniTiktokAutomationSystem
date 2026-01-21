@@ -1,0 +1,27 @@
+services:
+  # Selenium standalone Chrome browser
+  selenium:
+    image: selenium/standalone-chromium:latest
+    container_name: selenium-chrome
+    shm_size: '2gb'
+    ports:
+      - "4444:4444"
+      - "7900:7900"  # VNC viewer (password: secret)
+    environment:
+      - SE_VNC_NO_PASSWORD=1
+
+  # TikTok Auto Publisher
+  tiktok-auto:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.simple
+    container_name: tiktok-auto-publisher
+    depends_on:
+      - selenium
+    volumes:
+      - ../data/videos:/app/data/videos
+      - ../data/cookies:/app/data/cookies
+      - ../logs:/app/logs
+    environment:
+      - SELENIUM_REMOTE_URL=http://selenium:4444/wd/hub
+      - LOG_LEVEL=INFO

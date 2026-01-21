@@ -1,0 +1,40 @@
+# TikTok Auto Publisher - Configuration
+
+# Browser settings
+browser:
+  headless: false
+  # User data directory for persistent login sessions (keeps you logged in)
+  user_data_dir: "./chrome_data"
+  window_size:
+    width: 1920
+    height: 1080
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  implicit_wait: 10
+  page_load_timeout: 60
+
+# TikTok URLs
+tiktok:
+  base_url: "https://www.tiktok.com"
+  # TikTok Studio upload page (updated 2024)
+  upload_url: "https://www.tiktok.com/tiktokstudio/upload"
+  login_url: "https://www.tiktok.com/login"
+
+# Upload settings
+upload:
+  max_title_length: 150
+  max_retries: 3
+  retry_delay: 5
+  upload_timeout: 300
+
+# Timing settings (in seconds) - for human-like behavior
+timing:
+  min_delay: 1
+  max_delay: 3
+  typing_delay: 0.05
+
+# Logging
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
+  rotation: "10 MB"
+  retention: "7 days"

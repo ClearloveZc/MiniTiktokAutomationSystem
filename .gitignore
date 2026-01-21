@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/*
+*.log
+!logs/.gitkeep
+
+# Data files (videos, cookies)
+data/videos/*
+data/cookies/*
+!data/videos/.gitkeep
+!data/cookies/.gitkeep
+
+# Chrome user data
+chrome_data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution
+dist/
+build/
+*.egg-info/
