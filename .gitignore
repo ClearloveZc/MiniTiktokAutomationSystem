@@ -24,6 +24,7 @@ logs/*
 data/videos/*
 data/cookies/*
 !data/videos/.gitkeep
+!data/videos/example.mp4
 !data/cookies/.gitkeep
 
 # Chrome user data
