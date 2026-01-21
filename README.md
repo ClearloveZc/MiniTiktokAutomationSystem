@@ -59,6 +59,15 @@ python src/login_only.py
 
 Your session will be saved in `chrome_data/` for future runs. You only need to do this once (unless the session expires).
 
+#### View Uploaded Videos
+
+To open browser and check your uploaded videos:
+
+```bash
+python src/open_browser.py
+# Browser opens with your TikTok account → View your videos
+```
+
 #### Command Line Options
 
 | Option | Description |
