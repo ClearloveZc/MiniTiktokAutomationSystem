@@ -22,7 +22,8 @@ A Selenium-based automation tool for posting videos to TikTok. Supports headless
 
 1. **Clone and setup**
    ```bash
-   cd tiktokAuto
+   git clone https://github.com/YOUR_USERNAME/MiniTiktokAutomationSystem.git
+   cd MiniTiktokAutomationSystem
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
