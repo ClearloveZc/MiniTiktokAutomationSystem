@@ -65,7 +65,7 @@ def main():
         logger.error(f"Video file not found: {video_path}")
         return 1
     
-    logger.info(f"Starting TikTok Auto Publisher v0.1.0")
+    logger.info(f"Starting Mini TikTok Automation System v0.1.0")
     logger.info(f"Video: {video_path}")
     
     # Override headless mode if specified
