@@ -1,5 +1,5 @@
 """
-TikTok Auto Publisher - Main Entry Point
+Mini TikTok Automation System - Main Entry Point
 """
 
 import argparse

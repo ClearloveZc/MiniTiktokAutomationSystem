@@ -105,7 +105,7 @@ If login expires, just re-run `python src/export_cookies.py` locally.
 ## Project Structure
 
 ```
-tiktokAuto/
+MiniTiktokAutomationSystem/
 ├── src/
 │   ├── main.py          # Entry point
 │   ├── browser.py       # Browser management
@@ -143,7 +143,7 @@ Edit `config/config.yaml` to customize:
 - Or delete `data/cookies/tiktok_cookies.json`
 
 ### Upload Fails
-- Check `logs/tiktok_auto.log` for details
+- Check `logs/app.log` for details
 - Ensure video format is supported (mp4, mov, webm)
 - Try running without headless mode to see what's happening
 

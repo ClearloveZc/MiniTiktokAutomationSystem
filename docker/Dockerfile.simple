@@ -1,4 +1,4 @@
-# TikTok Auto Publisher - Simple Dockerfile (uses remote Selenium)
+# Mini TikTok Automation System - Dockerfile (uses remote Selenium)
 FROM python:3.11-slim
 
 WORKDIR /app

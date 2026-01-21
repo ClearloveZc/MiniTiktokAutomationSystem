@@ -10,7 +10,7 @@ services:
     environment:
       - SE_VNC_NO_PASSWORD=1
 
-  # TikTok Auto Publisher
+  # Mini TikTok Automation System
   tiktok-auto:
     build:
       context: ..

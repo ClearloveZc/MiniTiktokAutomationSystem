@@ -1,4 +1,4 @@
-# TikTok Auto Publisher - Dependencies
+# Mini TikTok Automation System - Dependencies
 
 # Selenium automation
 selenium>=4.15.0

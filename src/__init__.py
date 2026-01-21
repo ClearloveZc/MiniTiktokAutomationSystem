@@ -1,5 +1,5 @@
 """
-TikTok Auto Publisher
+Mini TikTok Automation System
 A Selenium-based automation tool for posting videos to TikTok.
 """
 
