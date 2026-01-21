@@ -83,7 +83,7 @@ docker-compose build
 
 docker-compose run tiktok-auto python src/main.py \
   -v /app/data/videos/example.mp4 \
-  -t "Uploaded from Docker!" \
+  -t "Uploaded from Docker" \
   --tags docker automation
 
 docker-compose down
